@@ -11,7 +11,7 @@ connectMongo('mongodb+srv://gr4ce001:killisai2005@cluster0.wqmguzz.mongodb.net/M
 
 app.use(express.json())
 
-app.use("/url",urlRoute)
+app.use("/users",urlRoute)
 app.get('/:shortid', async (req,res)=>{
     const shortid = req.params.shortid;
 
